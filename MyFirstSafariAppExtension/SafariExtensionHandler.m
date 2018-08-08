@@ -8,7 +8,7 @@
 
 #import "SafariExtensionHandler.h"
 #import "SafariExtensionViewController.h"
-
+#import <SafariServices/SFSafariApplication.h>
 
 @interface SafariExtensionHandler ()
 
@@ -25,6 +25,7 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 [[SafariExtensionViewController sharedController] updateDisplayText:[properties.url absoluteString]];
+                [self updateBadgeText:@"1" ofToolbarItem:nil];
             });
             
         }];
@@ -61,12 +62,13 @@
                 [activePage reload];
                 [[SafariExtensionViewController sharedController] setFirstTimeToLaunchAppEx:YES];
             }else {
-                [activePage dispatchMessageToScriptWithName:@"MessageFromSafariAppExtension" userInfo:nil];
+                [activePage dispatchMessageToScriptWithName:@"MessageFromSafariAppExtension" userInfo:@{@"name":@"the first safari app extension"}];
                 
                 [activePage getPagePropertiesWithCompletionHandler:^(SFSafariPageProperties * _Nullable properties) {
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [[SafariExtensionViewController sharedController] updateDisplayText:[properties.url absoluteString]];
+                        [self updateBadgeText:@"1" ofToolbarItem:nil];
                     });
                     
                 }];
@@ -79,6 +81,26 @@
 }
 
 - (void)popoverDidCloseInWindow:(SFSafariWindow *)window {
+    
+}
+
+#pragma mark - Private Helper
+
+- (void)updateBadgeText:(NSString *)text ofToolbarItem:(SFSafariToolbarItem *)toolbarItem {
+    
+    if (!text) {
+        return;
+    }
+    
+    if (toolbarItem) {
+        [toolbarItem setBadgeText:text];
+    }else {
+        [SFSafariApplication getActiveWindowWithCompletionHandler:^(SFSafariWindow * _Nullable activeWindow) {
+            [activeWindow getToolbarItemWithCompletionHandler:^(SFSafariToolbarItem * _Nullable toolbarItem) {
+                [toolbarItem setBadgeText:text];
+            }];
+        }];
+    }
     
 }
 

@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>MySecondSafariAppExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SafariAppExtensionDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3B7DCBFC211AD10600F58D61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B7DCC19211AD13200F58D61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3BB3184921198AB5000EC8AA</key>
 		<dict>
 			<key>primary</key>

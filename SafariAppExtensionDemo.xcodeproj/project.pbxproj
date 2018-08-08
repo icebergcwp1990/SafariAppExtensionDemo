@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7DCC1B211AD13200F58D61 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB3186721198AF3000EC8AA /* Cocoa.framework */; };
+		3B7DCC21211AD13200F58D61 /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DCC20211AD13200F58D61 /* SafariExtensionHandler.m */; };
+		3B7DCC24211AD13200F58D61 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DCC23211AD13200F58D61 /* SafariExtensionViewController.m */; };
+		3B7DCC27211AD13200F58D61 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DCC25211AD13200F58D61 /* SafariExtensionViewController.xib */; };
+		3B7DCC2A211AD13200F58D61 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DCC29211AD13200F58D61 /* script.js */; };
+		3B7DCC2F211AD13200F58D61 /* MySecondSafariAppExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B7DCC1A211AD13200F58D61 /* MySecondSafariAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B7DCC34211AD31300F58D61 /* ToolbarItemIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DCC33211AD31300F58D61 /* ToolbarItemIcon.png */; };
 		3BB3184F21198AB5000EC8AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3184E21198AB5000EC8AA /* AppDelegate.m */; };
 		3BB3185221198AB5000EC8AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3185121198AB5000EC8AA /* main.m */; };
 		3BB3185521198AB5000EC8AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3185421198AB5000EC8AA /* ViewController.m */; };
@@ -22,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3BB3187A21198AF4000EC8AA /* PBXContainerItemProxy */ = {
+		3B7DCC35211ADDF100F58D61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BB3184221198AB5000EC8AA /* Project object */;
 			proxyType = 1;
@@ -38,6 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				3B7DCC2F211AD13200F58D61 /* MySecondSafariAppExtension.appex in Embed App Extensions */,
 				3BB3187C21198AF4000EC8AA /* MyFirstSafariAppExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -46,6 +54,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B7DCC1A211AD13200F58D61 /* MySecondSafariAppExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MySecondSafariAppExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7DCC1E211AD13200F58D61 /* MySecondSafariAppExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySecondSafariAppExtension.entitlements; sourceTree = "<group>"; };
+		3B7DCC1F211AD13200F58D61 /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		3B7DCC20211AD13200F58D61 /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		3B7DCC22211AD13200F58D61 /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		3B7DCC23211AD13200F58D61 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		3B7DCC26211AD13200F58D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		3B7DCC28211AD13200F58D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7DCC29211AD13200F58D61 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		3B7DCC33211AD31300F58D61 /* ToolbarItemIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolbarItemIcon.png; sourceTree = "<group>"; };
 		3BB3184A21198AB5000EC8AA /* SafariAppExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariAppExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB3184D21198AB5000EC8AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BB3184E21198AB5000EC8AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +88,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B7DCC17211AD13200F58D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7DCC1B211AD13200F58D61 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BB3184721198AB5000EC8AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,11 +114,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B7DCC1C211AD13200F58D61 /* MySecondSafariAppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3B7DCC1F211AD13200F58D61 /* SafariExtensionHandler.h */,
+				3B7DCC20211AD13200F58D61 /* SafariExtensionHandler.m */,
+				3B7DCC22211AD13200F58D61 /* SafariExtensionViewController.h */,
+				3B7DCC23211AD13200F58D61 /* SafariExtensionViewController.m */,
+				3B7DCC25211AD13200F58D61 /* SafariExtensionViewController.xib */,
+				3B7DCC28211AD13200F58D61 /* Info.plist */,
+				3B7DCC29211AD13200F58D61 /* script.js */,
+				3B7DCC33211AD31300F58D61 /* ToolbarItemIcon.png */,
+				3B7DCC1D211AD13200F58D61 /* Supporting Files */,
+			);
+			path = MySecondSafariAppExtension;
+			sourceTree = "<group>";
+		};
+		3B7DCC1D211AD13200F58D61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B7DCC1E211AD13200F58D61 /* MySecondSafariAppExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3BB3184121198AB5000EC8AA = {
 			isa = PBXGroup;
 			children = (
 				3BB3184C21198AB5000EC8AA /* SafariAppExtensionDemo */,
 				3BB3186921198AF3000EC8AA /* MyFirstSafariAppExtension */,
+				3B7DCC1C211AD13200F58D61 /* MySecondSafariAppExtension */,
 				3BB3186621198AF3000EC8AA /* Frameworks */,
 				3BB3184B21198AB5000EC8AA /* Products */,
 			);
@@ -103,6 +154,7 @@
 			children = (
 				3BB3184A21198AB5000EC8AA /* SafariAppExtensionDemo.app */,
 				3BB3186521198AF3000EC8AA /* MyFirstSafariAppExtension.appex */,
+				3B7DCC1A211AD13200F58D61 /* MySecondSafariAppExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +218,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B7DCC19211AD13200F58D61 /* MySecondSafariAppExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7DCC30211AD13200F58D61 /* Build configuration list for PBXNativeTarget "MySecondSafariAppExtension" */;
+			buildPhases = (
+				3B7DCC16211AD13200F58D61 /* Sources */,
+				3B7DCC17211AD13200F58D61 /* Frameworks */,
+				3B7DCC18211AD13200F58D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySecondSafariAppExtension;
+			productName = MySecondSafariAppExtension;
+			productReference = 3B7DCC1A211AD13200F58D61 /* MySecondSafariAppExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3BB3184921198AB5000EC8AA /* SafariAppExtensionDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BB3185E21198AB5000EC8AA /* Build configuration list for PBXNativeTarget "SafariAppExtensionDemo" */;
@@ -178,7 +247,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3BB3187B21198AF4000EC8AA /* PBXTargetDependency */,
+				3B7DCC36211ADDF100F58D61 /* PBXTargetDependency */,
 			);
 			name = SafariAppExtensionDemo;
 			productName = SafariAppExtensionDemo;
@@ -211,6 +280,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = industiousonesoft;
 				TargetAttributes = {
+					3B7DCC19211AD13200F58D61 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
 					3BB3184921198AB5000EC8AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Manual;
@@ -241,11 +314,22 @@
 			targets = (
 				3BB3184921198AB5000EC8AA /* SafariAppExtensionDemo */,
 				3BB3186421198AF3000EC8AA /* MyFirstSafariAppExtension */,
+				3B7DCC19211AD13200F58D61 /* MySecondSafariAppExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B7DCC18211AD13200F58D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7DCC34211AD31300F58D61 /* ToolbarItemIcon.png in Resources */,
+				3B7DCC27211AD13200F58D61 /* SafariExtensionViewController.xib in Resources */,
+				3B7DCC2A211AD13200F58D61 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BB3184821198AB5000EC8AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +352,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B7DCC16211AD13200F58D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7DCC24211AD13200F58D61 /* SafariExtensionViewController.m in Sources */,
+				3B7DCC21211AD13200F58D61 /* SafariExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BB3184621198AB5000EC8AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,14 +383,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3BB3187B21198AF4000EC8AA /* PBXTargetDependency */ = {
+		3B7DCC36211ADDF100F58D61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3BB3186421198AF3000EC8AA /* MyFirstSafariAppExtension */;
-			targetProxy = 3BB3187A21198AF4000EC8AA /* PBXContainerItemProxy */;
+			targetProxy = 3B7DCC35211ADDF100F58D61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3B7DCC25211AD13200F58D61 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B7DCC26211AD13200F58D61 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
 		3BB3185821198AB5000EC8AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -317,6 +418,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3B7DCC31211AD13200F58D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MySecondSafariAppExtension/MySecondSafariAppExtension.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Wang Fu Chi (P5D2QVZLV4)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MySecondSafariAppExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.industiousonesoft.SafariAppExtensionDemo.MySecondSafariAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B7DCC32211AD13200F58D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MySecondSafariAppExtension/MySecondSafariAppExtension.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Wang Fu Chi (P5D2QVZLV4)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MySecondSafariAppExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.industiousonesoft.SafariAppExtensionDemo.MySecondSafariAppExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		3BB3185C21198AB5000EC8AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -467,6 +598,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B7DCC30211AD13200F58D61 /* Build configuration list for PBXNativeTarget "MySecondSafariAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7DCC31211AD13200F58D61 /* Debug */,
+				3B7DCC32211AD13200F58D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3BB3184521198AB5000EC8AA /* Build configuration list for PBXProject "SafariAppExtensionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -483,6 +622,7 @@
 				3BB3186021198AB5000EC8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BB3187D21198AF4000EC8AA /* Build configuration list for PBXNativeTarget "MyFirstSafariAppExtension" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +631,7 @@
 				3BB3187F21198AF4000EC8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
